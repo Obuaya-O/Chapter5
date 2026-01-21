@@ -1,8 +1,15 @@
-# Chapter5
-Our EUCT-NS dataset is composed of 190 rows of data with 4 numerical input variables and a target variable (endpoint type) with three class values; patient final outcome, intermediate endpoint and surrogate outcome (multiclass classification).
+# Chapter 5: Using Supervised Machine Learning to Identify Primary Endpoint Types in Nervous System Clinical Trial Documents 
 
-Our NS-HRA dataset is composed of 694 rows of data with 3 numerical input variables and the same  target variable as above with the same three class values
+## Project overview
+Given the high cost of manual annotation in medical domains and the prevalence of class imbalance,this project applies machine learning techniques to determine if we can classify primary endpoint types (e.g., patient-relevant outcomes, intermediate outcomes, surrogate outcomes) in nervous system clinical trial protocols.
 
-These datasets were formed to determine if machine learning could be used to classify when a surrogate outcome was used as the primary endpoint in a nervous system clinical trial. This knowledge would then be used to evaluate surrogate outcome use (thesis implication) and improve the transparency of reporting when a surrogate outcome is used (wider implication).
+We explore:
+**Leave-One-Out-Cross-Validation (LOOCV)** For model evaluation
+**Supervised machine learning** Using Complement Naive Bayes
+**Active learning** (Uncertainty sampling) to minimise human labelling effort 
 
-The MLP classifier was trained on the EUCT-NS dataset with a 80/20 split. The MLP model was then applied to the NS-HRA dataset and the predicted labels were generated.
+## Datasets
+This project uses the two datasets formed in **Chapter3**
+
+## Dependencies
+See requirements.txt
