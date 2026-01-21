@@ -4,7 +4,7 @@
 Given the high cost of manual annotation in medical domains and the prevalence of class imbalance,this project applies machine learning techniques to determine if we can classify primary endpoint types (e.g., patient-relevant outcomes, intermediate outcomes, surrogate outcomes) in nervous system clinical trial protocols.
 
 We explore:
-* **Leave-One-Out-Cross-Validation (LOOCV)** For model evaluation
+* **Leave-One-Out-Cross-Validation (LOOCV)** For model evaluation. We evaluated different classifiers and embedding techniques.
 * **Supervised machine learning** Using Complement Naive Bayes
 * **Active learning** (Uncertainty sampling) to minimise human labelling effort 
 
